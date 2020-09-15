@@ -8,7 +8,6 @@ import (
 	"image/png"
 	"io/ioutil"
 
-	"github.com/chai2010/tiff"
 	"github.com/chai2010/webp"
 )
 
@@ -103,7 +102,8 @@ func main() {
 		return
 	}
 
-	tiff_img, errbig := tiff.Decode(bytes.NewReader(TIFF))
+	//tiff图片直接使用 image.Decode()方法就好了
+	tiff_img, _, errbig := image.Decode(bytes.NewReader(TIFF))
 	if errbig != nil {
 		fmt.Println("errbig is ", errbig)
 	}
