@@ -96,7 +96,7 @@ func main() {
 
 	buf.Reset()
 	var tiff_img image.Image
-	TIFF, err3 := ioutil.ReadFile("tiff2.tiff")
+	TIFF, err3 := ioutil.ReadFile("tiff_img.tiff")
 	if err3 != nil {
 		fmt.Println("line102 error: ", err3)
 		return

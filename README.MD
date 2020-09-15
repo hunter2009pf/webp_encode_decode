@@ -1,1 +1,1 @@
-已验证,可以转换的格式: png,PNG,jpg,JPG,jpeg,JPEG
+已验证,可以转换的格式: png,PNG,jpg,JPG,jpeg,JPEG,tiff
